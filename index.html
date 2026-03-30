@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound vs Inflation Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Compound vs Inflation</h1>
+
+    <input type="number" id="principal" placeholder="Principal (₹)" min="0">
+    <input type="number" id="rate" placeholder="Interest Rate (%)" min="0">
+    <input type="number" id="inflation" placeholder="Inflation Rate (%)" min="0">
+    <input type="number" id="time" placeholder="Time (years)" min="0">
+
+    <select id="frequency">
+        <option value="1">Yearly</option>
+        <option value="2">Half-Yearly</option>
+        <option value="4">Quarterly</option>
+        <option value="12">Monthly</option>
+    </select>
+
+    <button onclick="calculate()">Compare</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
